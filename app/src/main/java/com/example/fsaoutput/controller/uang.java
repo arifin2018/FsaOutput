@@ -141,7 +141,7 @@ public class uang extends AppCompatActivity{
                 int a = count;//count hasil dari perhitungan button
                 int hitung = a - totall;
                 if (totall == 0 || totall > a) { //jika nilai uang lebih kecil dari harga pesanan maka dia gagal
-                    Toast.makeText(getApplicationContext(), "pesanan gagal",
+                    Toast.makeText(getApplicationContext(), "saldo anda tidak mencukupi",
                             Toast.LENGTH_SHORT).show(); // menampilkan pesan,pesanan gagal
                 }
                 else {

@@ -79,7 +79,8 @@
         android:layout_below="@+id/itemname"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        android:paddingStart="115dp"
+        android:layout_gravity="center"
+        android:paddingStart="110dp"
         android:textAlignment="center">
 
         <Button

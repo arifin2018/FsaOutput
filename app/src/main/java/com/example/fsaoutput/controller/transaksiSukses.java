@@ -33,14 +33,18 @@ public class transaksiSukses extends AppCompatActivity  {
             tv_kembalian = findViewById(R.id.productBuyChangeMoneyInfo);
 
             name = getIntent().getStringExtra("nama2");
-            photo = getIntent().getIntExtra("photo2",-1);
+            photo = getIntent().getIntExtra("photo2",0);
             harga = getIntent().getIntExtra("totalll",-1);
             kembalian = getIntent().getIntExtra("hitung",-1);
 
             nama2.setText(name);
             img2.setImageResource(photo);
-            deskripsi3.setText(Integer.toString(harga));
-            tv_kembalian.setText(Integer.toString(kembalian));
+            deskripsi3.setText("Harga Jajanan Rp. "+ harga);
+            tv_kembalian.setText("Kembali Rp. "+ kembalian);
+
+            //            deskripsi3.setText(Integer.toString(harga));
+            //            tv_kembalian.setText(Integer.toString(kembalian));
+
 
         }
 }

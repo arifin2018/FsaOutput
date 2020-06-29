@@ -106,17 +106,37 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
     //method hitung untuk parsing data dari sini ke uang activity
     public void hitung() {
         int totalz = cari;
-        Intent intent = new Intent(DescActivity.this, uang.class);
-        intent.putExtra("total", totalz);
-        intent.putExtra("img",photo);
-        intent.putExtra("nama",name);
-        startActivity(intent);
-        finish();
+        if(count < 1){
+            Toast.makeText(getApplicationContext(), "pesanan minimal 1",
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        else{
+            Intent intent = new Intent(DescActivity.this, uang.class);
+            intent.putExtra("total", totalz);
+            intent.putExtra("img",photo);
+            intent.putExtra("nama",name);
+            startActivity(intent);
+            finish();
+        }
+
     }
 
 
     @Override
     public void onClick(View v) {
+//        if(count < 1){
+//            Toast.makeText(getApplicationContext(), "pesanan minimal 1",
+//                    Toast.LENGTH_SHORT).show();
+//        }
+//
+//        else{
+//            Intent moveintent = new Intent(DescActivity.this, uang.class);
+//            startActivity(moveintent);
+//            finish();
+//        }
+
+
         if (v.getId() == R.id.order) {
             Intent moveIntent = new Intent(DescActivity.this, uang.class);
             startActivity(moveIntent);
