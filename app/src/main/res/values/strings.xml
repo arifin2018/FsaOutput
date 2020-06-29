@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">fsaOutput</string>
+    <string name="player_name">Nama Makanan</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tambah">+</string>
+    <string name="kurang">-</string>
+    <string name="item">Banyaknya Item</string>
+    <string name="Masukan">Masukan Uangmu</string>
+    <string name="rp_500">Rp500</string>
+    <string name="rp_1000">Rp1.000</string>
+    <string name="rp_2000">Rp2.000</string>
+    <string name="_5000">Rp5.000</string>
+    <string name="_10000">Rp10.000</string>
+    <string name="_20000">Rp20.000</string>
+    <string name="balance_rp_1000">Balance: Rp 1000</string>
+    <string name="buy">Buy</string>
+    <string name="masukan_uang">Masukan Uangmu :</string>
+    <string name="transaction_success">Transaction Success</string>
+    <string name="item_name">item_name</string>
+    <string name="price_rp_5000">Price:Rp.5000</string>
+    <string name="change_money">Change money:</string>
+    <string name="placeholder">placeholder</string>
+</resources>

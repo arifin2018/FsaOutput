@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.DescActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/nama"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textSize= "30sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nama" />
+
+    <TextView
+        android:id="@+id/deskripsi2"
+        android:layout_width="206dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_below="@id/deskripsi2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Harga Total : Rp."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/l1"
+        android:paddingStart="120dp"
+        android:paddingTop="20dp"
+        android:text="@string/item"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemname"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="115dp"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="increment"
+            android:text="@string/kurang"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/isi"
+            android:text="0"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="20dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="decrement"
+            android:text="@string/tambah"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Order"
+        android:layout_below="@+id/linier"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
