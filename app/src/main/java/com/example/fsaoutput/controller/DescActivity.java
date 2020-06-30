@@ -125,17 +125,6 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-//        if(count < 1){
-//            Toast.makeText(getApplicationContext(), "pesanan minimal 1",
-//                    Toast.LENGTH_SHORT).show();
-//        }
-//
-//        else{
-//            Intent moveintent = new Intent(DescActivity.this, uang.class);
-//            startActivity(moveintent);
-//            finish();
-//        }
-
 
         if (v.getId() == R.id.order) {
             Intent moveIntent = new Intent(DescActivity.this, uang.class);

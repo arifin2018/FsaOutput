@@ -49,10 +49,6 @@ public class transaksiSukses extends AppCompatActivity  {
             Coin500 = (CoinTmp % 1000) / 500;
             tv_kembalian.setText(Coin1000 + " Rp 1000 Coin(s)\n" + Coin500 + " Rp 500 Coin(s)");
 
-            //        "Kembali Rp. "+ kembalian
-            //            deskripsi3.setText(Integer.toString(harga));
-            //            tv_kembalian.setText(Integer.toString(kembalian));
-
 
         }
 }
