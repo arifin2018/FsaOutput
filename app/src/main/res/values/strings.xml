@@ -20,4 +20,10 @@
     <string name="price_rp_5000">Price:Rp.5000</string>
     <string name="change_money">Change money:</string>
     <string name="placeholder">placeholder</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="todo">TODO</string>
+    <string name="email">arifingdr@gmail.com</string>
+    <string name="arifin">Nur Arifin</string>
+    <string name="pesanDesc">aplikasi ini betujuan untuk memesan jajanan yang kalian inginkan</string>
 </resources>
