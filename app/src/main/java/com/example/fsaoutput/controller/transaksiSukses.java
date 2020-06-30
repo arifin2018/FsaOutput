@@ -13,7 +13,7 @@ import com.example.fsaoutput.R;
 
 public class transaksiSukses extends AppCompatActivity  {
 
-    TextView nama2, deskripsi3,tv_kembalian;
+    TextView nama2, deskripsi3,tv_kembalian, tv_kembalian2;
     ImageView img2;
 
     String name;
@@ -33,6 +33,7 @@ public class transaksiSukses extends AppCompatActivity  {
             deskripsi3 =  findViewById(R.id.deskripsi3);
             img2 = findViewById(R.id.gambar2);
             tv_kembalian = findViewById(R.id.productBuyChangeMoneyInfo);
+            tv_kembalian2 = findViewById(R.id.Kemabalian);
 
             name = getIntent().getStringExtra("nama2");
             photo = getIntent().getIntExtra("photo2",0);
@@ -42,6 +43,7 @@ public class transaksiSukses extends AppCompatActivity  {
             nama2.setText(name);
             img2.setImageResource(photo);
             deskripsi3.setText("Harga Jajanan Rp. "+ harga);
+            tv_kembalian2.setText("kembalian Rp. "+ kembalian);
 
             CoinBalance = kembalian;
             CoinTmp = CoinBalance;
