@@ -26,7 +26,7 @@ public class About extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        String title = "Home";
+        String title;
         switch (item.getItemId()) {
             case R.id.action_home:
                 title = "Home";

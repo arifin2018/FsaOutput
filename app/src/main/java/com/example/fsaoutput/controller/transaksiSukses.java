@@ -21,6 +21,8 @@ public class transaksiSukses extends AppCompatActivity  {
     int harga;
     int kembalian;
 
+    int CoinBalance,Coin500,Coin1000,CoinTmp;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +42,14 @@ public class transaksiSukses extends AppCompatActivity  {
             nama2.setText(name);
             img2.setImageResource(photo);
             deskripsi3.setText("Harga Jajanan Rp. "+ harga);
-            tv_kembalian.setText("Kembali Rp. "+ kembalian);
 
+            CoinBalance = kembalian;
+            CoinTmp = CoinBalance;
+            Coin1000 = CoinBalance / 1000;
+            Coin500 = (CoinTmp % 1000) / 500;
+            tv_kembalian.setText(Coin1000 + " Rp 1000 Coin(s)\n" + Coin500 + " Rp 500 Coin(s)");
+
+            //        "Kembali Rp. "+ kembalian
             //            deskripsi3.setText(Integer.toString(harga));
             //            tv_kembalian.setText(Integer.toString(kembalian));
 
