@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.fsaoutput.R;
 
 public class transaksiSukses extends AppCompatActivity  {

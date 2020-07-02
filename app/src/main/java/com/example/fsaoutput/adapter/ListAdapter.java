@@ -58,13 +58,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
                 intents.putExtra("nama",Jajanan.getName());
                 intents.putExtra("deskripsi",Jajanan.getDeskripsi());
                 intents.putExtra("gambar",Jajanan.getPhoto());
-                Bundle bundle = new Bundle();
-                bundle.putString("nama2",Jajanan.getName());
-                bundle.putInt("deskripsi3",Jajanan.getDeskripsi());
-                bundle.putInt("gambar2",Jajanan.getPhoto());
-                Intent intent = new Intent(context, transaksiSukses.class);
-                intent.putExtras(bundle);
-                context.startActivity(intents,bundle);
+                intents.putExtra("stock",Jajanan.getStock());
+
+                context.startActivity(intents);
                 Toast.makeText(holder.itemView.getContext(), "anda memilih " + listJajanan.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
             }
         });

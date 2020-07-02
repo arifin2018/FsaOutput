@@ -34,6 +34,20 @@ public class jajananData {
             7000,
     };
 
+    private static int[] jajananStok = {
+            60,
+            50,
+            55,
+            200,
+            100,
+            70,
+            75,
+            55,
+            50,
+            55,
+            70,
+    };
+
     private static int[] jajananImages = {
             R.drawable.bearbr,
             R.drawable.bendera,
@@ -55,6 +69,7 @@ public class jajananData {
             Jajanan.setName(jajananNames[position]);
             Jajanan.setDeskripsi(jajananDeskripsi[position]);
             Jajanan.setPhoto(jajananImages[position]);
+            Jajanan.setStock(jajananStok[position]);
             list.add(Jajanan);
         }
         return list;

@@ -15,17 +15,21 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.fsaoutput.R;
 
+import static com.example.fsaoutput.R.id.jumlah;
+
 public class DescActivity extends AppCompatActivity  implements View.OnClickListener {
     TextView nama, deskripsi;
     ImageView img;
     Button kurang, tambah;
-    TextView isi;
+    TextView isi,jumlah;
     int count = 0;
 
     String name;
     int photo;
     int harga;
     int cari;
+    int jumlahStock;
+    int tes;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -35,6 +39,7 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
         kurang =findViewById(R.id.kurang);
         tambah =findViewById(R.id.tambah);
         isi =findViewById(R.id.isi);
+        jumlah =findViewById(R.id.jumlah);
         Button btnMoveActivity = findViewById(R.id.order);
         btnMoveActivity.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -50,6 +55,7 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
         name = getIntent().getStringExtra("nama");
         harga = getIntent().getIntExtra("deskripsi",-1);
         photo = getIntent().getIntExtra("gambar",-1);
+        jumlahStock = getIntent().getIntExtra("stock",0);
 
         nama.setText(name);
         deskripsi.setText( "Harga : Rp." + (harga));
@@ -62,19 +68,23 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
     }
 
     public void increment(View view) {
-        if(count==0){
-            Toast.makeText(this,"pesanan minimal 1",Toast.LENGTH_SHORT).show();
+        if (count == 0) {
+            Toast.makeText(this, "pesanan minimal 1", Toast.LENGTH_SHORT).show();
             return;
         }
-        count = count-1 ;
+
+        count = count - 1;
         int a = count;
         int bb = harga;
+        int cc = jumlahStock;
         //panggil variabel global
-        cari = a*bb;
+        cari = a * bb;
+        tes = cc - a;
+
         display(count);
         total(cari);
+        tampilan(tes);
     }
-
     public void decrement(View view) {
         if (count==50){
             Toast.makeText(this,"maksimal 50",Toast.LENGTH_SHORT).show();
@@ -83,10 +93,19 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
         count = count+1 ;
         int a = count;
         int bb = harga;
+        int cc = jumlahStock;
         //panggil variabel global
         cari = a*bb;
+        tes = cc - a;
+
         display(count);
         total(cari);
+        tampilan(tes);
+    }
+
+    private void tampilan(int num){
+        TextView hasil = findViewById(R.id.jumlah);
+        hasil.setText(("" + num));
     }
 
     //method untuk get view dari count barang
@@ -130,5 +149,5 @@ public class DescActivity extends AppCompatActivity  implements View.OnClickList
             Intent moveIntent = new Intent(DescActivity.this, uang.class);
             startActivity(moveIntent);
         }
-        }
+    }
 }

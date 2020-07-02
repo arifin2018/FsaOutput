@@ -2,6 +2,7 @@ package com.example.fsaoutput.model;
 
 public class jajanan {
     private int deskripsi;
+    private int stock;
     private int photo;
     private String name;
 
@@ -32,6 +33,14 @@ public class jajanan {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
 }
