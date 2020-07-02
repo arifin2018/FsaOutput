@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213442920956",
+    "firebase_url": "https://fsaoutput.firebaseio.com",
+    "project_id": "fsaoutput",
+    "storage_bucket": "fsaoutput.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213442920956:android:e1872941e2bcc7911c7279",
+        "android_client_info": {
+          "package_name": "com.example.fsaoutput"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213442920956-hvfpu2of11480ger4hsaaa0ei5008f1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyHliMHMVbUQSmDflXDQYSGgj100YFV_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213442920956-hvfpu2of11480ger4hsaaa0ei5008f1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

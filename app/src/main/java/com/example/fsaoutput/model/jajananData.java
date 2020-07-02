@@ -1,7 +1,6 @@
 package com.example.fsaoutput.model;
 
 import com.example.fsaoutput.R;
-import com.example.fsaoutput.model.jajanan;
 
 import java.util.ArrayList;
 
@@ -74,6 +73,4 @@ public class jajananData {
         }
         return list;
     }
-
-
 }
