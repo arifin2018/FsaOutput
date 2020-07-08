@@ -6,6 +6,7 @@ public class jajanan {
     private int photo;
     private String name;
 
+    //tempat Getter & setter,supaya bisa menempatkan data dan mengambil data
 
     public jajanan() {
     }

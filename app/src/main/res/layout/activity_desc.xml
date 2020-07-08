@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,8 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/nama" />
+        android:layout_below="@+id/nama"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/deskripsi2"
@@ -46,7 +46,7 @@
 
         <TextView
             android:id="@+id/harga"
-            android:text="Harga Total : Rp."
+            android:text="@string/harga_total_rp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -70,7 +70,7 @@
 
         <TextView
             android:id="@+id/stock"
-            android:text="Stock = "
+            android:text="@string/stock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center" />
@@ -94,7 +94,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingStart="10dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="52dp"
         android:paddingTop="20dp"
         android:text="@string/item"
         android:textAlignment="center"
@@ -109,7 +110,7 @@
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:paddingStart="115dp"
-        android:paddingEnd="10dp"
+        android:paddingEnd="50dp"
         android:textAlignment="center">
 
         <Button
@@ -126,7 +127,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginTop="15dp"
-            android:text="0"
+            android:text="@string/_0"
             android:textAlignment="center" />
 
         <Button
@@ -144,7 +145,7 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:text="Order"
+        android:text="@string/order"
         android:layout_below="@+id/linier"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"

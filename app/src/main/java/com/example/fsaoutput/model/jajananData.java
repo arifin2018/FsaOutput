@@ -3,7 +3,7 @@ package com.example.fsaoutput.model;
 import com.example.fsaoutput.R;
 
 import java.util.ArrayList;
-
+//untuk membuat/menampung data secara lokal
 public class jajananData {
     private static String[] jajananNames = {
             "Bear Brand",

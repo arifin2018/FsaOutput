@@ -22,8 +22,12 @@
     <string name="placeholder">placeholder</string>
     <string name="home">Home</string>
     <string name="about">About</string>
-    <string name="todo">TODO</string>
     <string name="email">arifingdr@gmail.com</string>
     <string name="arifin">Nur Arifin</string>
     <string name="pesanDesc">aplikasi ini betujuan untuk memesan jajanan yang kalian inginkan</string>
+    <string name="todo">TODO</string>
+    <string name="harga_total_rp">Harga Total : Rp.</string>
+    <string name="stock">Stock =</string>
+    <string name="_0">0</string>
+    <string name="order">Order</string>
 </resources>
